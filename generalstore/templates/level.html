@@ -1,0 +1,34 @@
+<div class="game-wrapper level-{{ data.level }}"
+     style="width: {{ data.defaults.width }}px; height: {{ data.defaults.height }}px;
+            background-image: url(media/images/backgrounds/{{ data.backgroundImage }});">
+  <div class="game-content">
+    <a href="javascript:;" id="inventory" data-action="inventory-show">
+      <span>inventory</span>
+    </a>
+    {% if data.defaults.showDescription and data.description.length > 0 %}
+      <div class="description">{{ data.description }}</div>
+    {% endif %}
+    {% for k, v in data.items %}
+      <img src="media/images/items/{{ data.items[k].image }}" data-action="item"
+           class="item" id="{{ k }}"
+           style="left: {{ data.items[k].left }}px; top: {{ data.items[k].top }}px;">
+    {% endfor %}
+    {% for k, v in data.characters %}
+      <img src="media/images/characters/{{ data.characters[k].image }}" data-action="character"
+           class="character" id="{{ k }}"
+           style="left: {{ data.characters[k].left }}px; top: {{ data.characters[k].top }}px;">
+    {% endfor %}
+    <div id="message"></div>
+    <div id="inventory-screen" class="hidden">
+      <h2>inventory</h2>
+      <a href="javascript:;" data-action="inventory-hide" class="close">close</a>
+      <ul id="inventory-items">
+        {% include 'inventory.html' %}
+      </ul>
+    </div>
+    <div id="inventory-notify" class="hidden" data-action="inventory-notify">
+      <p data-action="inventory-notify">New inventory!</p>
+      <img src="" data-action="inventory-notify">
+    </div>
+  </div>
+</div>

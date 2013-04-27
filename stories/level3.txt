@@ -1,0 +1,11 @@
+level
+3
+
+location
+On a Leafy Island
+
+background_image
+island.jpg
+
+description
+false

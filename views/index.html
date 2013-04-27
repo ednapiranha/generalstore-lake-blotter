@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <div id="wrapper"></div>
+  <a href="javascript:;" id="reset" data-action="reset-toggle">Reset Stats</a>
+  <a href="javascript:;" id="debug" data-action="debug-toggle">Disable debugger</a>
+  {% if debug %}
+    <script src="media/js/require.js" data-main="media/js/config"></script>
+  {% else %}
+    <script src="media/js/build/generalstore.js"></script>
+  {% endif %}
+{% endblock %}

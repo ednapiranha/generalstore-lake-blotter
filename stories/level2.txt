@@ -1,0 +1,60 @@
+level
+2
+
+location
+Underwater Subterranean Disco
+
+background_image
+underwater.jpg
+
+description
+The tidal wave from hell breaks apart your boat and you end up underwater!
+
+character
+name: octopus
+image: octopus.gif
+left: 100
+top: 200
+requires: false
+first_says: I am going to spray ink and make you freak the hell out...
+finally_says: *spray*
+gives: ink
+
+character
+name: shark
+image: shark.gif
+left: 586
+top: 104
+requires: ink
+first_says: GIVE ME THE OCTO INK BECAUSE I NEED TO WRITE STUFF DOWN!!
+finally_says: ok.
+gives: notes
+
+character
+name: bubble1
+image: bubble1.png
+left: 30
+top: 80
+requires: notes
+first_says: oOooO
+finally_says: oOooOooo oo oOoo o.
+gives: false
+
+character
+name: bubble2
+image: bubble1.png
+left: 350
+top: 100
+requires: notes
+first_says: oOooO here is a propeller to take you back up to the surface oOoOOoooO
+finally_says: oOooOooo oo oOoo o.
+gives: propeller
+
+item
+name: engine
+image: engine.png
+left: 450
+top: 90
+requires: propeller
+gives: false
+levels_up_to: 3

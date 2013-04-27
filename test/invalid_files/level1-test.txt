@@ -1,0 +1,21 @@
+level
+1
+
+location
+Some Dark Alley Invalid
+
+background_image
+alley.jpg
+
+description
+Welcome to the land of fluffy clouds and happiness.
+
+character
+
+item
+invalid_name: car
+left: 500
+top: 400
+requires: keys
+gives: false
+levels_up_to: 2

@@ -1,0 +1,36 @@
+{
+    "level": 1,
+    "location": "Name of your location",
+    "backgroundImage": "background-image.jpg",
+    "description": "Some description of the level or location",
+    "characters": {
+        "1-bear": {
+            "image": "bear.png",
+            "left": 100,
+            "top": 400,
+            "requirement": "",
+            "message": "Hello world!",
+            "endMessage": "...",
+            "inventory": "cat"
+        },
+        "1-dog": {
+            "image": "dog.png",
+            "left": 330,
+            "top": 300,
+            "requirement": "cat",
+            "message": "I like cats!",
+            "endMessage": "boop.",
+            "inventory": "pencil"
+        }
+    },
+    "items": {
+        "1-car": {
+            "image": "car.png",
+            "left": 500,
+            "top": 400,
+            "requirement": "pencil",
+            "inventory": "",
+            "triggerLevel": 2
+        }
+    }
+}

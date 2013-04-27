@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <div class="story-content">
+    <h1>Your Game Story</h1>
+
+    {% for story in stories %}
+      <article>{{ story.location }}</article>
+    {% endfor %}
+  </div>
+{% endblock %}

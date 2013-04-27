@@ -1,0 +1,40 @@
+level
+1
+
+location
+Some Dark Alley
+
+background_image
+alley.jpg
+
+description
+Welcome to the land of fluffy clouds and happiness, a land we all know and love. And has free beer.
+
+character
+name: bear
+image: bear.png
+left: 100
+top: 400
+requires: false
+first_says: Hey how are you doing!
+finally_says: ...
+gives: cat
+
+character
+name: dog
+image: dog.gif
+left: 330
+top: 300
+requires: cat
+first_says: I like cats! Thanks for this cat!
+finally_says: boop.
+gives: keys
+
+item
+name: car
+image: car.png
+left: 500
+top: 400
+requires: keys
+gives: false
+levels_up_to: 2

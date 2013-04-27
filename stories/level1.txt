@@ -1,0 +1,30 @@
+level
+1
+
+location
+Lake Blotter
+
+background_image
+lake.jpg
+
+description
+The lake of awkward tidal waves.
+
+character
+name: fish
+image: fish.gif
+left: 100
+top: 250
+requires: false
+gives: boat
+first_says: Bloop, bloop. Is this the sound fish make? Here's a boat.
+finally_says: Bloop, bloop.
+
+item
+name: wave
+image: wave.png
+left: 600
+top: 100
+requires: boat
+gives: false
+levels_up_to: 2

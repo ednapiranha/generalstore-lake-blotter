@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}General Store{% endblock %}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="chrome=1" http-equiv="X-UA-Compatible">
+    {% if debug %}
+      <link rel="stylesheet" href="media/css/reset.css">
+      <link rel="stylesheet" href="media/css/main.css">
+      <link rel="stylesheet" href="media/css/custom.css">
+    {% else %}
+      <link rel="stylesheet" href="media/css/main-min.css">
+    {% endif %}
+  </head>
+  <body class="debugger">
+    {% block content %}{% endblock %}
+  </body>
+</html>
